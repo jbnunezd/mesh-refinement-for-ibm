@@ -69,7 +69,6 @@ function build_main()
     mkdir "${PROJECT_ROOT}/build" || exit
   fi
   cd "${PROJECT_ROOT}/build" || exit
-  cd "${PROJECT_ROOT}/build" || exit
   cmake -DCMAKE_BUILD_TYPE="${OPT_BUILD_TYPE}" "${PROJECT_ROOT}" || exit
   cmake -DCMAKE_BUILD_TYPE="${OPT_BUILD_TYPE}" "${PROJECT_ROOT}" || exit
   make || exit
